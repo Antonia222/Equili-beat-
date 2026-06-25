@@ -1,44 +1,38 @@
-# Equili-beat-
-#  Mini Robot Auto-Balancín "Equili-beat"
+# 🤖 Mini Robot Auto-Balancín "Equili-beat" 
 
-![Foto del Robot](Aquí_ira_el_link_de_su_foto.jpg)
-*Prototipo final del robot balancín con temática de tocadiscos vintage.*
+![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Fusion360](https://img.shields.io/badge/Fusion_360-F37021?style=for-the-badge&logo=autodesk&logoColor=white)
 
-## 👥 Equipo de Trabajo
-**Curso:** Mecatrónica 4250
-* Antonia Muñoz
-* María Jesús Caldera
-* Benjamín Olivares
-* Benjamín Bou
+![Prototipo Final](Aquí_ira_el_link_de_su_foto.jpg)
+> *Prototipo final del robot balancín con temática de tocadiscos vintage, desarrollado para el curso de Mecatrónica.*
 
----
-
-##  Índice
+## 📋 Tabla de Contenidos
 1. [Descripción del Proyecto](#-descripción-del-proyecto)
 2. [Estructura del Repositorio](#-estructura-del-repositorio)
-3. [Resultados y Control PID](#-resultados-y-control-pid)
-4. [Referencias](#-referencias)
+3. [Componentes y Hardware (BOM)](#-componentes-y-hardware-bom)
+4. [Sistema de Control PID](#-sistema-de-control-pid)
+5. [Registros y Resultados](#-registros-y-resultados)
+6. [Equipo de Trabajo](#-equipo-de-trabajo)
 
 ---
 
-##  Descripción del Proyecto
-Este repositorio contiene la documentación y código para el diseño, construcción y control de **Equili-beat**, un Mini Robot Auto-Balancín. El objetivo principal es mantener el equilibrio dinámico (péndulo invertido) mediante la implementación de un controlador PID. El sistema utiliza retroalimentación en tiempo real a través de un sensor MPU6050 y actúa sobre motores de corriente continua mediante un driver L298N, todo integrado en un chasis de diseño personalizado con estética retro.
+## 📖 Descripción del Proyecto
+**Equili-beat** es un Mini Robot Auto-Balancín diseñado para mantener el equilibrio dinámico (emulando un péndulo invertido) mediante la implementación de un **Controlador PID**. 
 
-##  Estructura del Repositorio
-* **`/CAD`**: Modelos 3D (Fusion360 y .STEP) y planos de fabricación.
-* **`/BOM`**: Lista de componentes electrónicos y materiales (Bill of Materials).
-* **`/Codigo`**: Firmware en C++ para Arduino y diagrama de lógica de ejecución.
-* **`/Diagramas`**: Diagrama esquemático electrónico y diagrama de bloques del sistema de control.
-* **`/Audiovisual`**: Registros fotográficos y videos de los avances experimentales.
+El sistema utiliza retroalimentación en tiempo real a través de un sensor inercial **MPU6050** (acelerómetro y giroscopio) y actúa sobre motores de corriente continua mediante un driver de potencia **L298N**. Todo el conjunto está ensamblado en un chasis de diseño propio fabricado mediante corte láser, dotado de una estética retro estilo "tocadiscos".
 
-##  Resultados y Control PID
-Para lograr la estabilización, se partió con el método de Ziegler-Nichols ($Ku=100$, $Tu=0.3333s$). Sin embargo, las constantes teóricas saturaban el sistema (Windup). Se realizó una sintonización empírica final para mitigar el ruido del sensor y eliminar la deriva lateral:
-* **Kp = 35.0**: Mantiene la rigidez justa sin rebasar el equilibrio.
-* **Ki = 3.0**: Aporta la acumulación de error necesaria para mantener el punto cero real y vencer la fricción estática.
-* **Kd = 0.7**: Amortigua las oscilaciones físicas sin amplificar el ruido de alta frecuencia del MPU6050.
+---
 
-##  Referencias
-* Ogata, K. (2010). *Ingeniería de Control Moderna*.
-* Método de sintonización de Ziegler-Nichols.
-* Datasheet Sensor Inercial MPU6050.
-* Datasheet Puente H L298N.
+## 📂 Estructura del Repositorio
+
+El repositorio está organizado de la siguiente manera para facilitar su reproducción:
+
+```text
+Equili-beat/
+├── 📁 CAD/                  # Modelos Fusion360 (.f3d), archivos .STEP y planos de corte
+├── 📁 BOM/                  # Lista detallada de materiales
+├── 📁 Codigo/               # Firmware Arduino (.ino) y diagramas de flujo lógicos
+├── 📁 Diagramas/            # Esquemas de conexión (Fritzing/Kicad) y bloques de control
+├── 📁 Audiovisual/          # Videos de prueba y fotografías del ensamblaje
+└── 📄 README.md             # Documentación principal
