@@ -7,4 +7,4 @@ En este directorio se alojan todos los modelos tridimensionales y planos bidimen
 * **Modelo Universal (`.STEP`):** Exportación estándar para visualización en otros softwares CAD o visores 3D.
 * **Planos de Manufactura:** Archivos vectoriales y planos utilizados para el corte láser de las piezas de MDF (pisos y techo) e impresión 3D (PLA).
 
-*(Nota: Descargue los archivos para explorarlos en su visor CAD preferido).*
+
