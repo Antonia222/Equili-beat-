@@ -20,7 +20,7 @@
 
 ## 🖼️ Registro Visual del Prototipo
 <p align="center">
-  <img src="Audiovisual/foto_prototipo_final.jpg" alt="Prototipo Equili-beat" width="450"/>
+  <img src="Audiovisual/Prototipo%20Completo%20(Frontal).jpeg" alt="Prototipo Equili-beat" width="450"/>
   <br>
   <i>Figura 1: Vista general de Equili-beat, robot auto-balancín con chasis de estética vintage.</i>
 </p>
