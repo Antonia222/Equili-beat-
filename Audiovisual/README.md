@@ -17,4 +17,4 @@ Al revisar los registros, se evidenciará que **el chasis y la disposición fís
 ### 📸 Fotografía del Prototipo Final
 Captura del ensamblaje definitivo destacando el chasis con forma de tocadiscos clásico.
 
-![Prototipo Final](foto_prototipo_final.jpg)
+![Prototipo Final](Prototipo Completo (Frontal).jpeg)
