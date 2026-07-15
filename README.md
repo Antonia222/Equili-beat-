@@ -27,56 +27,35 @@
 
 ---
 
-## 📋 Índice General
+## 📋 Índice
 1. [Descripción del Proyecto](#-descripción-del-proyecto)
-2. [Documentación y Módulos](#-documentación-y-módulos)
-3. [Arquitectura del Código y Firmware](#-arquitectura-del-código-y-firmware)
-4. [Diagramas Electrónicos y de Conexión](#-diagramas-electrónicos-y-de-conexión)
-5. [Modelación y Sistema de Control PID](#-modelación-y-sistema-de-control-pid)
-6. [Referencias y Citas](#-referencias-y-citas)
+2. [Estructura del Repositorio](#-estructura-del-repositorio)
+3. [Referencias y Citas](#-referencias-y-citas)
 
 ---
 
 ## 📖 Descripción del Proyecto
 **Equili-beat** es un vehículo robótico de dos ruedas paralelas diseñado bajo el principio físico del **péndulo invertido de base móvil**. El objetivo fundamental del dispositivo es mantener su equilibrio dinámico autónomo (punto de equilibrio inestable en el eje vertical, 0°).
 
-Para lograr la estabilización en tiempo real, el sistema adquiere datos cinemáticos mediante un sensor inercial (IMU) **MPU6050**, los procesa en un microcontrolador compatible con Arduino mediante un algoritmo de control **PID (Proporcional-Integral-Derivativo)**, y ajusta de forma continua el torque y sentido de giro de dos motores de corriente continua usando un puente H **L298N**. Todo el conjunto está ensamblado sobre un chasis personalizado con diseño retro inspirado en un tocadiscos de vinilo.
+Para lograr la estabilización en tiempo real, el sistema adquiere datos cinemáticos mediante un sensor inercial (IMU) **MPU6050**, los procesa en un microcontrolador compatible con Arduino mediante un algoritmo de control **PID (Proporcional-Integral-Derivativo)**, y ajusta de forma continua el torque y sentido de giro de dos motores de corriente continua usando un puente H **L298N**. Todo el conjunto está ensamblado sobre un chasis modular con un diseño retro inspirado en un tocadiscos de vinilo.
 
 ---
 
-## 📚 Documentación y Módulos
+## 🗂️ Estructura del Repositorio
 
-Explora los directorios a continuación para revisar la documentación técnica detallada, modelos fuente, firmware y la evidencia experimental del proyecto.
+Este repositorio contiene toda la documentación y archivos del proyecto, organizados de acuerdo con los requerimientos del curso:
 
-| Módulo / Directorio | Descripción |
+| Directorio | Descripción |
 | :--- | :--- |
-| 📦 **[Lista de Materiales (BOM)](./BOM)** | **Catálogo de Componentes y Hardware.**<br>Contiene la lista simple y exhaustiva de componentes electrónicos (Arduino, MPU6050, L298N), actuadores (motores tipo BO, batería) y materiales utilizados en el chasis. |
-| 📐 **[Archivos de Diseño CAD](./CAD)** | **Modelos Fuente (Fusion 360 y STEP) y Planos de Fabricación.**<br>Descarga el gemelo digital del robot auto-balancín. Incluye los archivos de diseño nativos y los planos vectoriales utilizados para el corte láser. |
-| 💻 **[Código y Firmware](./Codigo)** | **Lógica de Control y Programa Principal.**<br>Directorio que almacena el script de Arduino (`.ino`) organizado y comentado, junto con el diagrama visual de la lógica de ejecución básica. |
-| 🔌 **[Diagramas Electrónicos y Control](./Diagramas)** | **Esquemáticos y Lazo Cerrado.**<br>Incluye el diagrama de conexión circuital de los componentes y la representación analítica en bloques del sistema de control PID implementado. |
-| 📹 **[Registros Audiovisuales](./Audiovisual)** | **Evidencia Experimental.**<br>Videos e imágenes que documentan la progresión de los avances, comparando las oscilaciones iniciales frente al equilibrio dinámico estable logrado en la fase final. |
+| 📐 **[CAD](./CAD)** | **Modelos y Planos:** Modelos 3D utilizados para diseño y fabricación (formatos nativos Fusion360 y `.STEP`) y los planos 2D/vectores utilizados para el corte láser. |
+| 📦 **[BOM](./BOM)** | **Lista de Materiales (Bill of Materials):** Documento con la lista simple de componentes electrónicos y materiales de fabricación utilizados en el ensamble. |
+| 💻 **[Código](./Codigo)** | **Firmware y Lógica:** Código del proyecto (`.ino`) organizado y comentado. Incluye además diagrama de la lógica de ejecución básica. |
+| 🔌 **[Diagramas](./Diagramas)** | **Esquemas y Control:** Diagrama esquemático electrónico (circuital) de las conexiones físicas y el diagrama de bloques del sistema de control automático implementado. |
+| 📹 **[Audiovisual](./Audiovisual)** | **Evidencia Experimental:** Registros multimedia (videos e imágenes) que documentan los avances iterativos y los resultados experimentales finales del prototipo. |
 
 ---
 
-## 💻 Arquitectura del Código y Firmware
-
-### Preámbulo Obligatorio del Código
-El código fuente ejecutable (`.ino`) incluye el siguiente bloque de documentación exigido para la validación de autoría:
-
-```cpp
-/*
- * ==============================================================================
- * PROYECTO: Mini Robot Auto-Balancín "Equili-beat"
- * CURSO: Mecatrónica ME4250
- * ------------------------------------------------------------------------------
- * INTEGRANTES: 
- * - Antonia Muñoz
- * - María Jesús Caldera
- * - Benjamín Olivares
- * - Benjamín Bou
- * ------------------------------------------------------------------------------
- * DESCRIPCIÓN: Implementación de un lazo cerrado de control PID utilizando la
- * lectura filtrada del sensor MPU6050 a través de I2C y comandos de velocidad
- * PWM mediante el Driver L298N para motores DC.
- * ==============================================================================
- */
+## 📚 Referencias y Citas
+1. **Ziegler, J. G., & Nichols, N. B.** (1942). *Optimum settings for automatic controllers*. Transactions of the ASME, 64, 759-768.
+2. **InvenSense.** (2013). *MPU-6000 and MPU-6050 Product Specification Revision 3.4*. 
+3. **STMicroelectronics.** (2000). *L298 Dual Full-Bridge Driver Datasheet*.
