@@ -49,7 +49,7 @@ Este repositorio contiene toda la documentación y archivos del proyecto, organi
 | :--- | :--- |
 | 📐 **[CAD](./CAD)** | **Modelos y Planos:** Contiene los modelos 3D utilizados para diseño y fabricación (formatos nativos Fusion360 y `.STEP`) y los planos 2D/vectores utilizados para el corte láser. |
 | 📦 **[BOM](./BOM)** | **Lista de Materiales (Bill of Materials):** Documento con la lista simple de componentes electrónicos, actuadores y materiales de fabricación utilizados en el ensamble. |
-| 💻 **[Codigo](./Codigo)** | **Firmware y Lógica:** Código del proyecto (`.ino`) organizado, comentado y con el preámbulo oficial de integrantes. Incluye además el diagrama de la lógica de ejecución básica. |
+| 💻 **[Código](./Codigo)** | **Firmware y Lógica:** Código del proyecto (`.ino`) organizado, comentado y con el preámbulo oficial de integrantes. Incluye además el diagrama de la lógica de ejecución básica. |
 | 🔌 **[Diagramas](./Diagramas)** | **Esquemas y Control:** Incluye el diagrama esquemático electrónico (circuital) de las conexiones físicas y el diagrama de bloques del sistema de control automático implementado. |
 | 📹 **[Audiovisual](./Audiovisual)** | **Evidencia Experimental:** Registros multimedia (videos e imágenes) que documentan los avances iterativos y los resultados experimentales finales del prototipo. |
 
