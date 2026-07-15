@@ -14,4 +14,4 @@ La distribución de señales entre el Arduino y la etapa de potencia (Driver L29
 ### Esquemático Electrónico
 Representación visual del cableado entre el microcontrolador, el sensor inercial y el puente H:
 
-![Diagrama Electronico](diagrama_electronico.png)
+![Diagrama Electronico](IMG_0578.png)
