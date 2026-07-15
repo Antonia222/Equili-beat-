@@ -45,27 +45,17 @@ Para lograr la estabilización en tiempo real, el sistema adquiere datos cinemá
 
 Este repositorio contiene toda la documentación y archivos del proyecto, organizados de acuerdo con los requerimientos del curso:
 
-* 📐 **[CAD](./CAD)**
-  * Modelos 3D utilizados para el diseño y fabricación del robot auto-balancín (disponibles en formato nativo de Fusion360 y `.STEP`).
-  * Planos de fabricación y vectores 2D utilizados para el corte láser.
-
-* 📦 **[BOM](./BOM)**
-  * **Lista de Materiales (Bill of Materials):** Documento detallado y simple con los componentes electrónicos, actuadores y materiales de fabricación utilizados en el ensamble.
-
-* 💻 **[Codigo](./Codigo)**
-  * Firmware principal del proyecto (`.ino`). El código se encuentra adecuadamente organizado, comentado e incluye el preámbulo oficial con los datos de los integrantes.
-  * Diagrama de lógica de ejecución básica del algoritmo.
-
-* 🔌 **[Diagramas](./Diagramas)**
-  * Diagrama esquemático electrónico (circuital) de las conexiones físicas.
-  * Diagrama de bloques del sistema de control automático implementado.
-
-* 📹 **[Audiovisual](./Audiovisual)**
-  * Registros multimedia (imágenes y videos) que documentan los avances iterativos y los resultados experimentales finales del prototipo en equilibrio.
+| Directorio | Descripción |
+| :--- | :--- |
+| 📐 **[CAD](./CAD)** | **Modelos y Planos:** Contiene los modelos 3D utilizados para diseño y fabricación (formatos nativos Fusion360 y `.STEP`) y los planos 2D/vectores utilizados para el corte láser. |
+| 📦 **[BOM](./BOM)** | **Lista de Materiales (Bill of Materials):** Documento con la lista simple de componentes electrónicos, actuadores y materiales de fabricación utilizados en el ensamble. |
+| 💻 **[Codigo](./Codigo)** | **Firmware y Lógica:** Código del proyecto (`.ino`) organizado, comentado y con el preámbulo oficial de integrantes. Incluye además el diagrama de la lógica de ejecución básica. |
+| 🔌 **[Diagramas](./Diagramas)** | **Esquemas y Control:** Incluye el diagrama esquemático electrónico (circuital) de las conexiones físicas y el diagrama de bloques del sistema de control automático implementado. |
+| 📹 **[Audiovisual](./Audiovisual)** | **Evidencia Experimental:** Registros multimedia (videos e imágenes) que documentan los avances iterativos y los resultados experimentales finales del prototipo. |
 
 ---
 
 ## 📚 Referencias y Citas
-1. **Ziegler, J. G., & Nichols, N. B.** (1942). *Optimum settings for automatic controllers*. Transactions of the ASME, 64, 759-768. (Utilizado como punto de partida analítico para la sintonización del PID).
-2. **InvenSense.** (2013). *MPU-6000 and MPU-6050 Product Specification Revision 3.4*. (Datasheet consultado para la lectura del acelerómetro y giroscopio).
-3. **STMicroelectronics.** (2000). *L298 Dual Full-Bridge Driver Datasheet*. (Referencia para la conexión de motores DC).
+1. **Ziegler, J. G., & Nichols, N. B.** (1942). *Optimum settings for automatic controllers*. Transactions of the ASME, 64, 759-768.
+2. **InvenSense.** (2013). *MPU-6000 and MPU-6050 Product Specification Revision 3.4*. 
+3. **STMicroelectronics.** (2000). *L298 Dual Full-Bridge Driver Datasheet*.
