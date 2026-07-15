@@ -1,3 +1,20 @@
+/*
+ * ==============================================================================
+ * PROYECTO: Mini Robot Auto-Balancín "Equili-beat"
+ * CURSO: Mecatrónica ME4250
+ * ------------------------------------------------------------------------------
+ * INTEGRANTES: 
+ * - Antonia Muñoz
+ * - María Jesús Caldera
+ * - Benjamín Olivares
+ * - Benjamín Bou
+ * ------------------------------------------------------------------------------
+ * DESCRIPCIÓN: Implementación de un lazo cerrado de control PID utilizando la
+ * lectura filtrada del sensor MPU6050 a través de I2C y comandos de velocidad
+ * PWM mediante el Driver L298N para motores DC.
+ * ==============================================================================
+ */
+
 #include <Wire.h>
 #include <MPU6050.h>
 
